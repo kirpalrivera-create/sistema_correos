@@ -160,6 +160,7 @@
 .hero h1 {
   margin: 16px 0 14px;
   letter-spacing: -0.03em;
+  color: var(--primary-color);
 }
 
 .lead {
