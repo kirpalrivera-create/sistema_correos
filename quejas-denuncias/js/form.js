@@ -126,6 +126,20 @@
     summary.hidden = true;
     const folio = "QD-" + Date.now().toString(36).toUpperCase();
     const tipo = form.getAttribute("data-tipo") || "Queja";
+    const data = new FormData(form);
+    if (window.NauQuejas) {
+      window.NauQuejas.add({
+        folio,
+        tipo,
+        fecha: new Date().toISOString(),
+        nombre: data.get("nombre") || "",
+        p_apellido: data.get("p_apellido") || "",
+        s_apellido: data.get("s_apellido") || "",
+        telefono: data.get("telefono") || "",
+        correo: data.get("correo") || "",
+        queja_denuncia: data.get("queja_denuncia") || "",
+      });
+    }
     const params = new URLSearchParams({ folio, tipo });
     window.location.href = "acuse.html?" + params.toString();
   });

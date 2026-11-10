@@ -137,16 +137,21 @@ h6 {
   font-family: var(--font-heading);
   font-weight: 700;
   line-height: var(--line-height-tight);
-  color: var(--primary-color);
+  color: #7e1520;
   margin: 0 0 var(--font-size-base);
 }
 
-h1 {
+html body h1,
+html body h1.titulo-institucional,
+html body .hero h1,
+html body .page-header h1,
+html body main h1 {
   font-size: clamp(1.75rem, 4vw, var(--font-size-4xl));
-  color: var(--primary-color);
+  color: #7e1520 !important;
 }
 
 h2 {
+  color: #5a0b13;
   font-size: var(--font-size-3xl);
 }
 

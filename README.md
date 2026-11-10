@@ -9,3 +9,5 @@ python3 -m http.server 8080 --bind 127.0.0.1
 ```
 
 Abre `http://127.0.0.1:8080/quejas-denuncias/`.
+
+Revisión (personal): `login.html` — demostración `revision@naucalpan.gob.mx` / `Quejas2026`.
