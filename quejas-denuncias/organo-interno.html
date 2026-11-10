@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Órgano Interno de Control — Gobierno Municipal de Naucalpan de Juárez</title>
+  <meta name="description" content="Vigila que las personas servidoras públicas cumplan su trabajo, previene corrupción y recibe quejas y denuncias ciudadanas.">
+  <link rel="stylesheet" href="css/naucalpan-tokens.css">
+  <link rel="stylesheet" href="css/quejas.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
+  <a class="skip-link" href="#formulario-denuncia">Saltar al formulario</a>
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <p>Módulo de Quejas y denuncias del Gobierno Municipal de Naucalpan de Juárez</p>
+      <a href="https://naucalpan.gob.mx/cartelera/">Eventos</a>
+    </div>
+  </div>
+  <div class="site-header-sticky">
+    <header class="header">
+      <div class="container brand">
+        <div class="logo-row">
+          <a class="logo-main" href="https://naucalpan.gob.mx/">
+            <img src="https://naucalpan.gob.mx/wp-content/uploads/2024/12/logo-n-2.png" width="210" height="79" alt="Naucalpan de Juárez">
+          </a>
+          <div class="logo-secondary-group">
+            <span class="logo-secondary-item">
+              <img src="https://naucalpan.gob.mx/wp-content/uploads/2026/10/logo_edomex1.png" alt="Gobierno del Estado de México">
+            </span>
+            <span class="logo-secondary-item">
+              <img src="https://naucalpan.gob.mx/wp-content/uploads/2026/10/log_edomex2-300x116.png" alt="Estado de México">
+            </span>
+          </div>
+        </div>
+        <div class="header-label">
+          <strong>Registrar denuncia</strong>
+          <span>Órgano Interno de Control</span>
+        </div>
+      </div>
+    </header>
+    <nav class="mainnav" aria-label="Navegación de Quejas y denuncias">
+      <div class="container navwrap">
+        <button class="menu-toggle" type="button" id="menu-toggle" aria-expanded="false" aria-controls="menu-modulo">Menú</button>
+        <ul class="menu" id="menu-modulo">
+          <li><a href="index.html">Tipos de denuncia</a></li>
+          <li><a href="protesta-ciudadana.html">Protesta ciudadana</a></li>
+          <li><a href="asuntos-internos.html">Asuntos internos</a></li>
+          <li><a href="organo-interno.html" aria-current="page">Órgano interno de control</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <main id="contenido-principal">
+    <div class="hero">
+      <div class="container page-header">
+        <p class="eyebrow">Quejas y denuncias</p>
+        <h1>¿Qué es el Órgano Interno de Control?</h1>
+        <p class="lead">Vigila que las personas servidoras públicas cumplan su trabajo, previene corrupción y recibe quejas y denuncias ciudadanas.</p>
+        <div class="note">
+          <h2 id="casos-titulo">¿Cuándo puedes presentar una denuncia?</h2>
+          <ul class="cases" aria-labelledby="casos-titulo">
+              <li>Cuando te pidan dinero o favores a cambio de un trámite gratuito o propio de sus funciones.</li>
+              <li>Si una persona servidora pública te trata con prepotencia, groserías o discriminación.</li>
+              <li>Si sufres acoso u hostigamiento sexual por parte de una persona servidora pública.</li>
+              <li>Cuando se utilicen vehículos, materiales o recursos del gobierno para asuntos personales.</li>
+              <li>Si una obra pública está mal hecha o parece abandonada sin explicación.</li>
+              <li>Cuando alguna persona servidora pública no se presente a trabajar pero siga cobrando.</li>
+              <li>Si se falsifican documentos oficiales o se hacen trámites ilegales.</li>
+              <li>Cuando no te den respuesta a una solicitud ciudadana sin causa justificada.</li>
+              <li>Si te piden dinero a cambio de ser beneficiario de un programa social municipal.</li>
+          </ul>
+        </div>
+        <p class="contact">Teléfonos: 55 5371 8300 / 55 5371 8400. Ventanilla en Av. Juárez 39, Fracc. El Mirador, Edificio Anexo Ala B.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="panel">
+        <div id="form-status" class="sr-only" role="status" aria-live="polite"></div>
+        <form id="formulario-denuncia" data-quejas-form data-tipo="Órgano Interno de Control" novalidate>
+          <div class="error-summary" id="error-summary" hidden tabindex="-1">
+            <h2>Hay errores en el formulario</h2>
+            <p>Corrige los siguientes campos para continuar:</p>
+            <ul id="error-summary-list"></ul>
+          </div>
+          
+          <section class="group" aria-labelledby="datos-titulo">
+            <h2 id="datos-titulo">Datos de la persona denunciante</h2>
+            <div class="grid3">
+              <div>
+                <label for="curpd">CURP <span class="hint">Opcional. 18 caracteres.</span></label>
+                <input type="text" id="curpd" name="curp" maxlength="18" autocomplete="off" spellcheck="false">
+              </div>
+              <div>
+                <label for="ap_paterno">Primer apellido <span class="req">(obligatorio)</span></label>
+                <input type="text" id="ap_paterno" name="p_apellido" required autocomplete="family-name">
+              </div>
+              <div>
+                <label for="ap_materno">Segundo apellido <span class="req">(obligatorio)</span></label>
+                <input type="text" id="ap_materno" name="s_apellido" required>
+              </div>
+              <div>
+                <label for="nombre_solo">Nombre(s) <span class="req">(obligatorio)</span></label>
+                <input type="text" id="nombre_solo" name="nombre" required autocomplete="given-name">
+              </div>
+              <div>
+                <label for="telefono">Teléfono <span class="req">(obligatorio)</span></label>
+                <input type="tel" id="telefono" name="telefono" maxlength="10" inputmode="numeric" required autocomplete="tel">
+                <span class="hint" id="telefono-ayuda">10 dígitos, sin espacios.</span>
+              </div>
+              <div>
+                <label for="correo">Correo electrónico <span class="hint">Opcional.</span></label>
+                <input type="email" id="correo" name="correo" autocomplete="email">
+              </div>
+            </div>
+          </section>
+
+          <section class="group" aria-labelledby="domicilio-titulo">
+            <h2 id="domicilio-titulo">Domicilio</h2>
+            <div class="grid4">
+              <div>
+                <label for="calle">Calle</label>
+                <input type="text" id="calle" name="calle" autocomplete="address-line1">
+              </div>
+              <div>
+                <label for="numero">Número</label>
+                <input type="text" id="numero" name="numero">
+              </div>
+              <div>
+                <label for="cp">Código postal <span class="req">(obligatorio)</span></label>
+                <input type="text" id="cp" name="cp" maxlength="5" inputmode="numeric" required autocomplete="postal-code" aria-describedby="cp-ayuda">
+                <span class="hint" id="cp-ayuda">Al escribir 5 dígitos se cargan colonias de ejemplo (53000 a 53400).</span>
+              </div>
+              <div>
+                <label for="colonia">Colonia <span class="req">(obligatorio)</span></label>
+                <select id="colonia" name="colonia" required>
+                  <option value="">Selecciona una colonia</option>
+                </select>
+              </div>
+            </div>
+          </section>
+
+          <section class="group" aria-labelledby="hechos-titulo">
+            <h2 id="hechos-titulo">Descripción de la queja o denuncia</h2>
+            <div>
+              <label for="queja_denuncia">Relato de los hechos <span class="req">(obligatorio)</span></label>
+              <textarea id="queja_denuncia" name="queja_denuncia" rows="5" required></textarea>
+            </div>
+          </section>
+
+          <div class="actions">
+            <a class="btn btn-secondary" href="index.html">Volver a tipos de denuncia</a>
+            <button type="submit" class="btn btn-primary">Enviar denuncia</button>
+          </div>
+          <p style="margin-top:18px">
+            <button type="button" class="btn btn-secondary" id="abrir-aviso">Aviso de privacidad simplificado</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </main>
+  
+  <dialog id="aviso-privacidad" aria-labelledby="aviso-titulo">
+    <h2 id="aviso-titulo">Aviso de privacidad simplificado</h2>
+    <p>Los datos personales que captures en este módulo se usan para registrar, turnar y dar seguimiento a tu queja o denuncia ante el Gobierno Municipal de Naucalpan de Juárez.</p>
+    <p>Puedes ejercer tus derechos ARCO en la Unidad de Transparencia municipal. Consulta el aviso completo en el portal oficial.</p>
+    <button type="button" class="btn btn-primary" id="cerrar-aviso">Cerrar aviso de privacidad</button>
+  </dialog>
+
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h2>Gobierno Municipal de Naucalpan de Juárez</h2>
+        <address>
+          Av. Juárez # 39, Col. El Mirador, Municipio Naucalpan de Juárez, Estado de México C.P. 53050<br>
+          <a href="tel:+525587895500">55 8789 5500</a>
+        </address>
+      </div>
+      <div>
+        <h3>Mapa de sitio</h3>
+        <nav aria-label="Mapa de sitio">
+          <ul>
+            <li><a href="https://naucalpan.gob.mx/">Portal municipal</a></li>
+            <li><a href="index.html">Quejas y denuncias</a></li>
+            <li><a href="https://naucalpan.gob.mx/avisos-de-privacidad/">Avisos de privacidad</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <h3>Sitios de interés</h3>
+        <nav aria-label="Sitios de interés">
+          <ul>
+            <li><a href="https://naucalpan.gob.mx/oic/">Órgano Interno de Control</a></li>
+            <li><a href="https://ipomex.org.mx/ipomex/#/obligaciones/149">IPOMEX</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>Gobierno Municipal de Naucalpan de Juárez. Paleta y tipografía tomadas del sitio oficial naucalpan.gob.mx.</p>
+      </div>
+    </div>
+  </footer>
+  <div class="access-widget" id="access-widget">
+    <button type="button" class="access-trigger" id="access-trigger" aria-expanded="false" aria-controls="access-panel" aria-label="Abrir opciones de accesibilidad">
+      <svg class="access-icon" viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" focusable="false">
+        <circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <circle cx="12" cy="6.1" r="1.7" fill="currentColor"/>
+        <path d="M5.9 9.2c3.9 1.1 8.3 1.1 12.2 0M12 9.6v4.2m0 0 2.7 5.6M12 13.8l-2.7 5.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+      <span>Accesibilidad</span>
+    </button>
+    <div class="access-panel" id="access-panel" role="group" aria-labelledby="access-panel-title" hidden>
+      <h2 class="access-panel-title" id="access-panel-title">Opciones de accesibilidad</h2>
+      <button type="button" class="access-option" id="contrast" aria-pressed="false">Alto contraste</button>
+      <button type="button" class="access-option" id="textsize" aria-pressed="false">Aumentar tamaño del texto</button>
+      <button type="button" class="access-option" id="readable-font" aria-pressed="false">Tipografía legible</button>
+      <button type="button" class="access-option" id="highlight-links" aria-pressed="false">Resaltar enlaces</button>
+      <button type="button" class="access-option" id="stop-motion" aria-pressed="false">Detener animaciones</button>
+      <button type="button" class="access-reset" id="access-reset">Restablecer todo</button>
+      <a class="access-declaration" href="https://naucalpan.gob.mx/accesibilidad/">Declaración de accesibilidad</a>
+    </div>
+  </div>
+  <script src="js/a11y.js"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>
