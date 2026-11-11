@@ -157,12 +157,16 @@
   font-size: 0.9rem;
 }
 
+html body.nau h1,
+html body.nau .hero h1,
+html body.nau-quejas h1,
+html body.homepage .hero h1,
 html body .hero h1,
 html body .hero h1.titulo-institucional,
 html body main#contenido-principal h1 {
   margin: 16px 0 14px;
   letter-spacing: -0.03em;
-  color: #7e1520 !important;
+  color: #5a0b13 !important;
 }
 
 .lead {
@@ -763,7 +767,7 @@ dialog::backdrop {
 
   html body h1,
   html body .hero h1 {
-    color: #7e1520 !important;
+    color: #5a0b13 !important;
   }
 
   .panel,
