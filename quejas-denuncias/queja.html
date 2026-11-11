@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Detalle de queja — Naucalpan</title>
+  <link rel="stylesheet" href="css/naucalpan-tokens.css?v=20261110f">
+  <link rel="stylesheet" href="css/quejas.css?v=20261110f">
+  <style id="titulo-institucional">
+    html body h1, html body .hero h1, html body main h1, html body h1.titulo-institucional {
+      color: #7E1520 !important;
+    }
+  </style>
+</head>
+<body class="nau-quejas">
+  <a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
+  <div class="topbar no-print">
+    <div class="container topbar__inner">
+      <p>Revisión de quejas y denuncias</p>
+      <a href="dashboard.html">Volver al tablero</a>
+    </div>
+  </div>
+  <div class="site-header-sticky no-print">
+    <header class="header">
+      <div class="container brand">
+        <div class="logo-row">
+          <a class="logo-main" href="https://naucalpan.gob.mx/">
+            <img src="https://naucalpan.gob.mx/wp-content/uploads/2024/12/logo-n-2.png" width="210" height="79" alt="Naucalpan de Juárez">
+          </a>
+        </div>
+        <div class="header-label">
+          <strong>Detalle</strong>
+          <span>Queja o denuncia</span>
+        </div>
+      </div>
+    </header>
+  </div>
+  <main id="contenido-principal">
+    <div class="hero">
+      <div class="container page-header">
+        <p class="eyebrow">Expediente</p>
+        <h1 id="queja-titulo" class="titulo-institucional" style="color:#7E1520 !important">Queja</h1>
+      </div>
+    </div>
+    <div class="container" style="margin-bottom:48px">
+      <div class="panel" style="padding:28px">
+        <div class="actions no-print" style="border:0;padding-top:0">
+          <a class="btn btn-secondary" href="dashboard.html">Volver</a>
+          <button type="button" class="btn btn-primary" id="imprimir-queja">Imprimir queja</button>
+        </div>
+        <div id="queja-ficha"></div>
+      </div>
+    </div>
+  </main>
+  <script src="js/store.js?v=20261110f"></script>
+  <script src="js/queja.js?v=20261110f"></script>
+</body>
+</html>

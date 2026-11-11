@@ -1,0 +1,13 @@
+/* Solo títulos. Se puede cargar al final en WordPress o en el portal de quejas.
+   Medido 2026-11-11 en https://naucalpan.gob.mx/ : --primary-color #5A0B13 */
+html body.nau h1,
+html body.nau .hero h1,
+html body.nau .hero-inner h1,
+html body.nau-quejas h1,
+html body.homepage .hero h1,
+html body .hero h1,
+body.nau h1,
+.hero h1,
+h1.titulo-institucional {
+  color: #5A0B13 !important;
+}
